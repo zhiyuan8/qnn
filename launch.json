@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "QNN ONNX Converter",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "C:\\Qualcomm\\AIStack\\QAIRT\\2.31.0.250130\\bin\\arm64x-windows-msvc\\qnn-onnx-converter",
+            "args": [
+                "--input_network", "C:\\Users\\dev\\OneDrive\\Desktop\\code\\nexaqnn\\model_f16.onnx",
+                "--output_path", "C:\\Users\\dev\\OneDrive\\Desktop\\code\\nexaqnn\\model.cpp",
+                "--input_list", "C:\\Users\\dev\\OneDrive\\Desktop\\code\\nexaqnn\\input_list_calibration.txt",
+                "--act_bw", "16",
+                "--weight_bw", "8",
+                "--param_quantizer", "symmetric"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "TMPDIR": "C:\\Qualcomm\\AIStack\\QAIRT\\2.31.0.250130\\bin\\arm64x-windows-msvc\\temp"
+            },
+            "cwd": "C:\\Qualcomm\\AIStack\\QAIRT\\2.31.0.250130\\bin\\arm64x-windows-msvc"
+        }
+    ]
+}
